@@ -1,7 +1,13 @@
 import React from 'react'
 import './sidemenu.scss'
-import {MdLineStyle} from 'react-icons/md'
+import {MdLineStyle, MdReport} from 'react-icons/md'
 import {FiTrendingUp, FiUsers} from 'react-icons/fi'
+import {SiSimpleanalytics} from 'react-icons/si'
+import {CgCommunity} from 'react-icons/cg'
+import {AiOutlineMail} from 'react-icons/ai'
+import {VscFeedback} from 'react-icons/vsc'
+import {BiMessage} from 'react-icons/bi'
+import {BsBriefcase} from 'react-icons/bs'
 
 export default function SideMenu() {
   return (
@@ -29,63 +35,63 @@ export default function SideMenu() {
                 </div>
 
                 <div className="sideMenu-menu">
-                    <h3 className='sideMenuTitle'>Dashboard</h3>
+                    <h3 className='sideMenuTitle'>Quick Menu</h3>
                     <ul className='menuList'>
                         <li className='menuListItem'>
-                            <MdLineStyle className='menuIcon'/>
-                            Home
+                            <MdReport className='menuIcon'/>
+                            Reports
                         </li>
 
                         <li className='menuListItem'>
-                            <FiTrendingUp className='menuIcon'/>
-                            Trending
+                            <SiSimpleanalytics className='menuIcon'/>
+                            Analytics
                         </li>
 
                         <li className='menuListItem'>
-                            <FiUsers className='menuIcon'/>
-                            Users
+                            <CgCommunity className='menuIcon'/>
+                            Communities
                         </li>
 
                     </ul>
                 </div>
 
                 <div className="sideMenu-menu">
-                    <h3 className='sideMenuTitle'>Dashboard</h3>
+                    <h3 className='sideMenuTitle'>Notifications</h3>
                     <ul className='menuList'>
                         <li className='menuListItem'>
-                            <MdLineStyle className='menuIcon'/>
-                            Home
+                            <AiOutlineMail className='menuIcon'/>
+                            Mail
                         </li>
 
                         <li className='menuListItem'>
-                            <FiTrendingUp className='menuIcon'/>
-                            Trending
+                            <VscFeedback className='menuIcon'/>
+                            Feedback
                         </li>
 
                         <li className='menuListItem'>
-                            <FiUsers className='menuIcon'/>
-                            Users
+                            <BiMessage className='menuIcon'/>
+                            Messages
                         </li>
 
                     </ul>
                 </div>
 
                 <div className="sideMenu-menu">
-                    <h3 className='sideMenuTitle'>Dashboard</h3>
+                    <h3 className='sideMenuTitle'>Staff</h3>
                     <ul className='menuList'>
                         <li className='menuListItem'>
-                            <MdLineStyle className='menuIcon'/>
-                            Home
+                            <BsBriefcase className='menuIcon'/>
+                            Manage
                         </li>
 
                         <li className='menuListItem'>
-                            <FiTrendingUp className='menuIcon'/>
-                            Trending
+                            <SiSimpleanalytics className='menuIcon'/>
+                            Analytics
                         </li>
 
                         <li className='menuListItem'>
-                            <FiUsers className='menuIcon'/>
-                            Users
+                            <MdReport className='menuIcon'/>
+                           Reports
                         </li>
 
                     </ul>

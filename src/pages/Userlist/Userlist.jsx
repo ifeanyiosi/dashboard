@@ -1,12 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import './userlist.scss'
 
-import {MdVisibility} from 'react-icons/md'
+
 import { DataGrid } from '@material-ui/data-grid'
 import {AiOutlineDelete} from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 
 export default function Userlist() {
-   const [users, fetchUsers] = useState([])
+   const [users, fetchUsers] = useState([]);
+
+    
+
+  const handleDelete = (id) => {
+        fetch(`https://62823e3c9fac04c65411c0b5.mockapi.io/user/${id}`, {method: 'DELETE'})
+        .then(() => this.state({status:'delete ok'}))
+    }
 
     const getData = () => {
         fetch('https://62823e3c9fac04c65411c0b5.mockapi.io/user')
@@ -31,8 +39,10 @@ export default function Userlist() {
          renderCell: (params) =>{
              return(
                  <>
-                 <button className='userListEdit'>Edit</button>
-                 <AiOutlineDelete className='userListDelete'/>
+                <Link to={"/user/" + params.row.id}><button className='userListEdit'>Edit</button></Link> 
+                 <AiOutlineDelete className='userListDelete'
+                 onClick={() => handleDelete(params.row.id)}
+                 />
                  </>
              )
 

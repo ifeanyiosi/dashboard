@@ -8,6 +8,7 @@ import {AiOutlineMail} from 'react-icons/ai'
 import {VscFeedback} from 'react-icons/vsc'
 import {BiMessage} from 'react-icons/bi'
 import {BsBriefcase} from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 export default function SideMenu() {
   return (
@@ -25,11 +26,12 @@ export default function SideMenu() {
                             <FiTrendingUp className='menuIcon'/>
                             Trending
                         </li>
-
+                        <Link to='/users'>
                         <li className='menuListItem'>
                             <FiUsers className='menuIcon'/>
                             Users
                         </li>
+                        </Link>
 
                     </ul>
                 </div>

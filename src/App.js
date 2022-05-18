@@ -4,6 +4,8 @@ import Sidebar from './components/Sidebar/Sidebar';
 import SideMenu from './components/SideMenu/SideMenu';
 import Home from './pages/home/Home';
 import Userlist from "./pages/Userlist/Userlist";
+import User from "./pages/user/User";
+import NewUser from "./pages/NewUser/NewUser";
 
 function App() {
   return (
@@ -18,6 +20,12 @@ function App() {
           </Route>
           <Route path='/users'>
             <Userlist/>
+          </Route>
+           <Route path='/user/:userId'>
+            <User/>
+          </Route>
+          <Route path='/newuser'>
+            <NewUser/>
           </Route>
           
 

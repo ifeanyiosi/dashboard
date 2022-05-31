@@ -2,6 +2,8 @@ import React from 'react'
 import './featuredinfo.scss'
 import {AiOutlineArrowDown, AiOutlineArrowUp} from 'react-icons/ai'
 
+
+
 export default function FeaturedInfo() {
   return (
     <div className='featured'>
@@ -10,7 +12,7 @@ export default function FeaturedInfo() {
             <span className="featuredTitle">Users</span>
 
             <div className='featuredUserContainer'>
-            <span className='featuredUsers'>55</span>
+            <span className='featuredUsers'>54</span>
             <span className='featuredNewUsers'> -12 <AiOutlineArrowDown className='featuredIcon negative'/> </span>
             </div>
             
